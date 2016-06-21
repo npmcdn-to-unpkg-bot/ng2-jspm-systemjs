@@ -1,0 +1,1 @@
+module.exports = require("npm:@angular/platform-browser-dynamic@2.0.0-rc.2/index.js");

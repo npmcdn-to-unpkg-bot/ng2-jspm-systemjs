@@ -1,8 +1,9 @@
-import 'reflect-metadata';
-import 'zone.js/dist/zone';
-import 'zone.js/dist/long-stack-trace-zone';
+import { bootstrap } from '@angular/platform-browser-dynamic';
+import { provideRouter } from '@angular/router';
 
-import {bootstrap} from "@angular/platform-browser-dynamic";
-import {AppComponent} from "./app.component";
+import { AppComponent } from './app.component';
+import { AppRoutes } from './app.routes';
 
-bootstrap(AppComponent);
+bootstrap(AppComponent, [
+  provideRouter(AppRoutes)
+]);
